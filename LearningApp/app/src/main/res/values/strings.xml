@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Learning App</string>
+    <string name="this_is_an_orange_text_view">This is an Orange TextView</string>
+    <string name="this_is_an_green_text_view">This is an Green TextView</string>
+    <string name="this_is_an_blue_text_view">This is an Blue TextView</string>
+    <string name="image">Image</string>
+    <string name="this_is_a_button">This is a button</string>
+    <string name="this_is_a_green_button">This is a green button</string>
+    <string name="this_is_an_edit_text">This is an EditText</string>
+    <string name="this_is_a_new_edit_text">This is a new EditText</string>
+</resources>
