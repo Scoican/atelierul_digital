@@ -76,7 +76,8 @@
                 android:layout_margin="@dimen/small_dimen_margin"
                 android:layout_weight="1"
                 android:contentDescription="@string/image"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/ic_launcher_foreground"
+                android:background="@color/Yellow"/>
 
             <Button
                 android:layout_width="0dp"
@@ -123,6 +124,71 @@
         android:layout_weight="1"
         android:background="@color/Blue"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/checkboxAndSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/notify_me" />
+
+            <Switch
+                android:id="@+id/switch_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/auto_backup" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1" />
+
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_dimen_margin">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textSize="@dimen/medium_text_size" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="@dimen/medium_text_size" />
+        </RadioGroup>
 
     </LinearLayout>
 

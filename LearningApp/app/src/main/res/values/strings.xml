@@ -8,4 +8,10 @@
     <string name="this_is_a_green_button">This is a green button</string>
     <string name="this_is_an_edit_text">This is an EditText</string>
     <string name="this_is_a_new_edit_text">This is a new EditText</string>
+    <string name="notify_me">Notify me :)</string>
+    <string name="auto_backup">Auto backup</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="channel_name">Channel</string>
+    <string name="channel_description">Channel</string>
 </resources>
