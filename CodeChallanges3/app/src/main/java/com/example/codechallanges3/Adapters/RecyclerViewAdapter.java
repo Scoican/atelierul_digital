@@ -1,8 +1,10 @@
 package com.example.codechallanges3.Adapters;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +37,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         String lastName=lastNames.get(position);
         holder.studentFirstName.setText(firstName);
         holder.studentLastName.setText(lastName);
+        if(position%2==1){
+            holder.layout.setBackgroundColor(Color.parseColor("#D3D3D3"));
+        }else{
+            holder.layout.setBackgroundColor(Color.parseColor("#819ca9"));
+        }
     }
 
     @Override
@@ -45,11 +52,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     static class RecycleViewHolder extends RecyclerView.ViewHolder {
         final TextView studentFirstName;
         final TextView studentLastName;
+        final LinearLayout layout;
 
         RecycleViewHolder(@NonNull View itemView) {
             super(itemView);
             studentFirstName = itemView.findViewById(R.id.student_first_name);
             studentLastName = itemView.findViewById(R.id.student_last_name);
+            layout = itemView.findViewById(R.id.list_item);
         }
     }
 }
