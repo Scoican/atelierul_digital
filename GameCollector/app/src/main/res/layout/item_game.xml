@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marginSize_item_small"
+    android:layout_marginTop="@dimen/marginSize_item_ultra_small"
+    android:layout_marginEnd="@dimen/marginSize_item_small"
+    android:layout_marginBottom="@dimen/marginSize_item_ultra_small"
+    android:background="@drawable/item_shape"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_game_information"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginSize_item_small"
+            android:fontFamily="@font/madness_8_bit"
+            android:text="@string/game_name"
+            android:textSize="@dimen/fontSize_item_medium"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/item_game_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginSize_item_small"
+            android:fontFamily="@font/madness_8_bit"
+            android:text="@string/game_platform"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/fontSize_item_small"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_game_rating"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.40"
+        android:fontFamily="@font/madness_8_bit"
+        android:gravity="center"
+        android:text="@string/rating"
+        android:textSize="@dimen/fontSize_item_small" />
+
+</LinearLayout>

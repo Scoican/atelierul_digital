@@ -11,4 +11,24 @@
     <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="already_have_an_account_sign_in">Already Have an Account? Sign in</string>
+    <string name="game_name">Game Name</string>
+    <string name="game_platform">Game platform</string>
+    <string name="rating">Rating</string>
+    <string name="description">Description</string>
+    <string name="Lorem_Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="genre">Genre</string>
+    <string name="available_platform">Available platform</string>
+    <string name="_01_01_2020">01/01/2020</string>
+    <string name="add_game">Add game</string>
+    <string name="game_title">Game title</string>
+    <string name="release_date">Release date</string>
+    <string name="pc">PC</string>
+    <string name="Mobile">Mobile</string>
+    <string name="play_station">PlayStation</string>
+    <string name="x_box">XBox</string>
+    <string name="Nintendo">Nintendo</string>
+    <string name="add_game_button_string">Add Game</string>
+    <string name="new_adventures">New adventures?</string>
+    <string name="invite_friend">Invite friend</string>
+    <string name="feeling_lonely_invite_a_friend">Feeling lonely? Invite a friend</string>
 </resources>

@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">CodeChallanges3</string>
-    <string name="code_challenges_3">Code challenges 3!</string>
-    <string name="happy_holidays">Happy holidays!</string>
-    <string name="recycler_view">Recycler view</string>
-    <string name="constraint_view">Constraint view</string>
-    <string name="android_image">Android image</string>
-</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_game_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/add_game_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_game_form"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_game_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/madness_8_bit"
+            android:text="@string/new_adventures"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_game_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_top"
+            android:fontFamily="@font/madness_8_bit"
+            android:hint="@string/game_title"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/add_game_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_middle"
+            android:fontFamily="@font/madness_8_bit"
+            android:hint="@string/description"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="5"
+            android:minLines="1"
+            android:padding="15dp"
+            android:scrollbars="vertical"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/add_game_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:fontFamily="@font/madness_8_bit"
+            android:hint="@string/genre"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/add_game_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:fontFamily="@font/madness_8_bit"
+            android:hint="@string/release_date"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/add_game_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bottom"
+            android:fontFamily="@font/madness_8_bit"
+            android:hint="@string/rating"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/add_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/madness_8_bit"
+            android:text="@string/add_game_button_string"
+            android:textAllCaps="true"
+            android:textColor="#FE5295"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

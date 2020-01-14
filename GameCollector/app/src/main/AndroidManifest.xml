@@ -3,17 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.gamecollector">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".activities.AddGameActivity" />
+        <activity android:name=".activities.GamePageActivity" />
+        <activity android:name=".activities.MainMenuActivity" />
         <activity
-            android:name=".activities.RegisterActivity"
-            android:windowSoftInputMode="adjustResize" />
+            android:name=".activities.InviteFriendActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activities.LoginActivity"
             android:windowSoftInputMode="adjustResize">

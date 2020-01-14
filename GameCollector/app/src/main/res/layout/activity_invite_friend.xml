@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_login"
+    android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg">
 
+
     <LinearLayout
-        android:id="@+id/title_layout_login"
+        android:id="@+id/title_layout_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/input_group_login"
+        android:layout_above="@id/input_group_register"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -18,7 +19,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_text_login"
+            android:id="@+id/title_text_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/madness_8_bit"
@@ -28,7 +29,7 @@
             android:textSize="60sp" />
 
         <TextView
-            android:id="@+id/sub_title_text_login"
+            android:id="@+id/sub_title_text_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/madness_8_bit"
@@ -41,7 +42,7 @@
 
 
     <LinearLayout
-        android:id="@+id/input_group_login"
+        android:id="@+id/input_group_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -51,60 +52,44 @@
         android:gravity="center"
         android:orientation="vertical">
 
-
         <EditText
-            android:id="@+id/username_input_login"
+            android:id="@+id/email_input_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_top"
+            android:background="@drawable/edit_text_single"
             android:fontFamily="@font/madness_8_bit"
-            android:hint="@string/username"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/password_input_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_bottom"
-            android:fontFamily="@font/madness_8_bit"
-            android:hint="@string/password"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            android:padding="15dp"
-            android:textSize="20sp" />
-
+            android:textSize="20sp"
+            tools:ignore="Autofill" />
 
         <Button
-            android:id="@+id/sign_in_button_login"
+            android:id="@+id/sign_up_button_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/button"
             android:fontFamily="@font/madness_8_bit"
             android:foreground="?android:attr/selectableItemBackground"
-            android:text="@string/sign_in"
+            android:text="@string/invite_friend"
             android:textAllCaps="true"
             android:textColor="#FE5295"
             android:textSize="20sp"
             tools:ignore="UnusedAttribute" />
 
         <TextView
-            android:id="@+id/invite_friend_login"
+            android:id="@+id/login_in_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:fontFamily="@font/madness_8_bit"
             android:padding="10dp"
-            android:text="@string/feeling_lonely_invite_a_friend"
+            android:text="@string/already_have_an_account_sign_in"
             android:textAllCaps="true"
             android:textColor="#FAD0E1"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-
     </LinearLayout>
-
 </RelativeLayout>

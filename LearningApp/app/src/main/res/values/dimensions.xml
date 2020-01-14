@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="small_dimen_margin">10dp</dimen>
-    <dimen name="medium_dimen_margin">50dp</dimen>
-    <dimen name="big_dimen_margin">75dp</dimen>
-    <dimen name="medium_text_size">30sp</dimen>
-</resources>
